@@ -1,2 +1,2 @@
 # Medusa2.0
-Another project for my friend using JS in priority
+Another project for my friend using native JS in priority
