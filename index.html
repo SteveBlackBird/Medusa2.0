@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>MedusaINK</title>
+        <meta name="autor" content="SteveBlackBird">
+        <meta name="vievport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="mainNav" class="sidenav">
+            <div id="closeButtContainer" class="cbuttcontainer" onclick="closeNav()">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9668;</a>
+            </div>
+            <a href="#" id="homeBtn" class="icon fa fa-home"><br>Home</a>
+            <a href="#" id="aboutBtn" class="icon far fa-angry"><br>About</a>
+            <a href="#" id="worksBtn" class="icon fas fa-fire"><br>Works</a>
+            <a href="#" id="contactsBtn" class="icon far fa-handshake"><br>Contacts</a>
+        </div>
+        <div id="mainContainer" class="maincont">
+            <div id="openButtContainer" class="obuttcontainer" onclick="openNav()">
+                <a href="#" id="openBtn" class="openbtn" onclick="openNav()">&#9776;</a>
+            </div>
+            <div id="aboutModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <i>About</i>
+                    </div>
+                    <video autoplay muted controls loop id="myVideo">
+                        <source src="video/dima_x_medusa_tattoo.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video bro...
+                    </video>
+                    <div class="modal-body">
+                        <p>Hello to all! My name is Dmitry and I'm tattoo-artist from Russia, Mytishi.</p>
+                        <p>This is my web page, so here you can see my works, learn more about me or make an appointment for a session / consultation.</p>
+                        <p>Enjoy</p>
+                        <button id="playVideoBtn" class="videoBtn" onclick="playStopFunction()">Pause</button>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>&copy;MedusaINK</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="worksModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <i>Works</i>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_1.jpg" alt="tattoo1" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_2.jpg" alt="tattoo2" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_3.jpg" alt="tattoo3" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_4.jpg" alt="tattoo1" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_5.jpg" alt="tattoo2" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_6.jpg" alt="tattoo3" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_7.jpg" alt="tattoo1" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_8.jpg" alt="tattoo2" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/tattoo_img_9.jpg" alt="tattoo3" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>&copy;MedusaINK</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="contactsModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <i>Contacts</i>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lore ipsum sit dolar amen alar</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>&copy;MedusaINK</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js" async></script>
+        <script type="text/javascript" src="js/gallery.js" defer></script>
+    </body>
+</html>
