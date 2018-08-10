@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Raleway Black Italic";
+    src: url(../fonts/Raleway-Black-Italic.ttf);
+}
+@font-face {
+    font-family: "Raleway Bold Italic";
+    src: url(../fonts/Raleway-Bold-Italic.ttf);
+}
+@font-face {
+    font-family: "Raleway Black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+body {
+    font-family: "Raleway-Bold-Italic", sans-serif;
+    transition: background-color .9s;
+    height: 100%;
+    margin: 0;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.closebtn {
+    position: absolute;
+    top: 45%;
+    right: 25px;
+    font-size: 36px;
+}
+.main {
+    transition: margin-left .7s;
+    height: 100%;
+    background-image: url(../img/oblozhka.jpg);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
