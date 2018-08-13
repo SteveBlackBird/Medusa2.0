@@ -1,14 +1,19 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-var gallM = document.getElementById('galleryModal');
+var gallWM = document.getElementById('galleryWorksModal');
+var gallSM = document.getElementById('gallerySketchModal');
 
-function openModal() {
-	gallM.style.display = "block";
+function openModalWM() {
+	gallWM.style.display = "block";
+}
+function openModalSM() {
+	gallSM.style.display = "block";
 }
 
 function closeGalModal() {
-	gallM.style.display = "none";
+	gallWM.style.display = "none";
+	gallSM.style.display = "none";
 }
 
 function plusSlides(n) {
@@ -21,16 +26,29 @@ function currentSlide(n) {
 
 function showSlides(n) {
 	var i;
-	var slides = document.getElementsByClassName('mySlides');
-	var captionText = document.getElementById('caption');
-	if (n > slides.length) {
-		slideIndex = 1;
+	var slides;
+	if (slides = document.getElementsByClassName('worksSlides')) {
+		if (n > slides.length) {
+			slideIndex = 1;
+		}
+		if (n < 1) {
+			slideIndex = slides.length;
+		}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex-1].style.display = "block";
 	}
-	if (n < 1) {
-		slideIndex = slides.length;
+	if (slides = document.getElementsByClassName('sketchesSlides')) {
+		if (n > slides.length) {
+			slideIndex = 1;
+		}
+		if (n < 1) {
+			slideIndex = slides.length;
+		}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slides[slideIndex-1].style.display = "block";	
 	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	slides[slideIndex-1].style.display = "block";
 }
