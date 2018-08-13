@@ -13,9 +13,9 @@
             <div id="closeButtContainer" class="cbuttcontainer" onclick="closeNav()">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9668;</a>
             </div>
-            <a href="#" id="homeBtn" class="icon fa fa-home"><br>Home</a>
             <a href="#" id="aboutBtn" class="icon far fa-angry"><br>About</a>
             <a href="#" id="worksBtn" class="icon fas fa-fire"><br>Works</a>
+            <a href="#" id="sketchesBtn" class="icon fas fa-feather-alt"><br>Sketches</a>
             <a href="#" id="contactsBtn" class="icon far fa-handshake"><br>Contacts</a>
         </div>
         <div id="mainContainer" class="maincont">
@@ -33,13 +33,12 @@
                         Your browser does not support HTML5 video bro...
                     </video>
                     <div class="modal-body">
-                        <p>Hello to all! My name is Dmitry and I'm tattoo-artist from Russia, Mytishi.</p>
-                        <p>This is my web page, so here you can see my works, learn more about me or make an appointment for a session / consultation.</p>
-                        <p>Enjoy</p>
-                        <button id="playVideoBtn" class="videoBtn" onclick="playStopFunction()">Pause</button>
+                        <p>Привет! Меня зовут Дима Медуза - тату-мастер из города Мытищи(МО, Россия)</p>
+                        <p>На этом сайте Вы сможете увидеть примеры некоторых моих работ / эскизов, узнать чуть больше обо мне и, если возникнет желание, связаться со мной удобным для Вас способом.</p>
+                        <button id="cwmBtn" class="cwmBtn" onclick="goToContacts()">Contact with Master</button>
                     </div>
                     <div class="modal-footer">
-                        <h3>&copy;MedusaINK</h3>
+                        <h3>&copy;dimaXmedusa</h3>
                     </div>
                 </div>
             </div>
@@ -52,135 +51,270 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="column">
-                                <img src="img/gallery/tattoo_img_1.jpg" alt="tattoo1" onclick="openModal();currentSlide(1)" class="small_img" style="width:100%">
+                                <img src="img/gallery/works/tattoo_img_1.jpg" alt="tattoo1" onclick="openModalWM();currentSlide(1)" class="small_img" style="width:100%">
                             </div>
                             <div class="column">
-                                <img src="img/gallery/tattoo_img_2.jpg" alt="tattoo2" onclick="openModal();currentSlide(2)" class="small_img" style="width:100%">
+                                <img src="img/gallery/works/tattoo_img_2.jpg" alt="tattoo2" onclick="openModalWM();currentSlide(2)" class="small_img" style="width:100%">
                             </div>
                             <div class="column">
-                                <img src="img/gallery/tattoo_img_3.jpg" alt="tattoo3" onclick="openModal();currentSlide(3)" class="small_img" style="width:100%">
+                                <img src="img/gallery/works/tattoo_img_3.jpg" alt="tattoo3" onclick="openModalWM();currentSlide(3)" class="small_img" style="width:100%">
                             </div>
                             <div class="column">
-                                <img src="img/gallery/tattoo_img_4.jpg" alt="tattoo4" onclick="openModal();currentSlide(4)" class="small_img" style="width:100%">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="column">
-                                <img src="img/gallery/tattoo_img_5.jpg" alt="tattoo5" onclick="openModal();currentSlide(5)" class="small_img" style="width:100%">
-                            </div>
-                            <div class="column">
-                                <img src="img/gallery/tattoo_img_6.jpg" alt="tattoo6" onclick="openModal();currentSlide(6)" class="small_img" style="width:100%">
-                            </div>
-                            <div class="column">
-                                <img src="img/gallery/tattoo_img_7.jpg" alt="tattoo7" onclick="openModal();currentSlide(7)" class="small_img" style="width:100%">
-                            </div>
-                            <div class="column">
-                                <img src="img/gallery/tattoo_img_8.jpg" alt="tattoo8" onclick="openModal();currentSlide(8)" class="small_img" style="width:100%">
+                                <img src="img/gallery/works/tattoo_img_4.jpg" alt="tattoo4" onclick="openModalWM();currentSlide(4)" class="small_img" style="width:100%">
                             </div>
                         </div>
                         <div class="row">
                             <div class="column">
-                                <img src="img/gallery/tattoo_img_9.jpg" alt="tattoo9" onclick="openModal();currentSlide(9)" class="small_img" style="width:100%">
+                                <img src="img/gallery/works/tattoo_img_5.jpg" alt="tattoo5" onclick="openModalWM();currentSlide(5)" class="small_img" style="width:100%">
                             </div>
                             <div class="column">
-                                <img src="img/gallery/tattoo_img_10.jpg" alt="tattoo10" onclick="openModal();currentSlide(10)" class="small_img" style="width:100%">
+                                <img src="img/gallery/works/tattoo_img_6.jpg" alt="tattoo6" onclick="openModalWM();currentSlide(6)" class="small_img" style="width:100%">
                             </div>
                             <div class="column">
-                                <img src="img/gallery/tattoo_img_11.jpg" alt="tattoo11" onclick="openModal();currentSlide(11)" class="small_img" style="width:100%">
+                                <img src="img/gallery/works/tattoo_img_7.jpg" alt="tattoo7" onclick="openModalWM();currentSlide(7)" class="small_img" style="width:100%">
                             </div>
                             <div class="column">
-                                <img src="img/gallery/tattoo_img_12.jpg" alt="tattoo12" onclick="openModal();currentSlide(12)" class="small_img" style="width:100%">
+                                <img src="img/gallery/works/tattoo_img_8.jpg" alt="tattoo8" onclick="openModalWM();currentSlide(8)" class="small_img" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/gallery/works/tattoo_img_9.jpg" alt="tattoo9" onclick="openModalWM();currentSlide(9)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/works/tattoo_img_10.jpg" alt="tattoo10" onclick="openModalWM();currentSlide(10)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/works/tattoo_img_11.jpg" alt="tattoo11" onclick="openModalWM();currentSlide(11)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/works/tattoo_img_12.jpg" alt="tattoo12" onclick="openModalWM();currentSlide(12)" class="small_img" style="width:100%">
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <h3>&copy;MedusaINK</h3>
+                        <h3>&copy;dimaXmedusa</h3>
                     </div>
                 </div>
             </div>
-            <div id="galleryModal" class="modal-gallery">
+            <div id="galleryWorksModal" class="modal-gallery">
                 <div class="modal-gallery-content">
                         <span class="close" onclick="closeGalModal()">&times;</span>
                     <div class="modal-gallery-body">
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 1 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_1.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_1.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 2 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_2.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_2.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 3 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_3.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_3.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 4 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_4.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_4.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 5 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_5.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_5.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 6 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_6.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_6.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 7 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_7.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_7.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 8 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_8.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_8.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 9 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_9.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_9.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 10 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_10.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_10.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 11 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_11.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_11.jpg" class="big_img" style="width:100%">
                         </div>
-                        <div class="mySlides">
+                        <div class="worksSlides">
                             <div class="numbertext">
                                 12 / 12
                             </div>
-                            <img src="img/gallery/tattoo_img_12.jpg" class="big_img" style="width:100%">
+                            <img src="img/gallery/works/tattoo_img_12.jpg" class="big_img" style="width:100%">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                        <div class="caption-container">
-                            <p id="caption"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="sketchesModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <i>Sketches</i>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_1.jpg" alt="tattoo1" onclick="openModalSM();currentSlide(1)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_2.jpg" alt="tattoo2" onclick="openModalSM();currentSlide(2)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_3.jpg" alt="tattoo3" onclick="openModalSM();currentSlide(3)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_4.jpg" alt="tattoo4" onclick="openModalSM();currentSlide(4)" class="small_img" style="width:100%">
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_5.jpg" alt="tattoo5" onclick="openModalSM();currentSlide(5)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_6.jpg" alt="tattoo6" onclick="openModalSM();currentSlide(6)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_7.jpg" alt="tattoo7" onclick="openModalSM();currentSlide(7)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_8.jpg" alt="tattoo8" onclick="openModalSM();currentSlide(8)" class="small_img" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_9.jpg" alt="tattoo9" onclick="openModalSM();currentSlide(9)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_10.jpg" alt="tattoo10" onclick="openModalSM();currentSlide(10)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_11.jpg" alt="tattoo11" onclick="openModalSM();currentSlide(11)" class="small_img" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="img/gallery/sketches/sketch_img_12.jpg" alt="tattoo12" onclick="openModalSM();currentSlide(12)" class="small_img" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>&copy;dimaXmedusa</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="gallerySketchModal" class="modal-gallery">
+                <div class="modal-gallery-content">
+                        <span class="close" onclick="closeGalModal()">&times;</span>
+                    <div class="modal-gallery-body">
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                1 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_1.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                2 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_2.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                3 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_3.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                4 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_4.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                5 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_5.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                6 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_6.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                7 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_7.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                8 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_8.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                9 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_9.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                10 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_10.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                11 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_11.jpg" class="big_img" style="width:100%">
+                        </div>
+                        <div class="sketchesSlides">
+                            <div class="numbertext">
+                                12 / 12
+                            </div>
+                            <img src="img/gallery/sketches/sketch_img_12.jpg" class="big_img" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
                     </div>
                 </div>
             </div>
@@ -191,10 +325,16 @@
                         <i>Contacts</i>
                     </div>
                     <div class="modal-body">
-                        <p>Lore ipsum sit dolar amen alar</p>
+                        <p><i>Телефон</i>: +7(968)845-24-82</p>
+                        <p><i>E-mail</i>: medusa666dxc@gmail.com</p>
+                        <p><i>Адрес</i>: г. Мытищи, ул. Силикатная 31В</p>
+                        <p>Также Вы можете написать мне в VK или посмотреть другие мои работы в Instagram</p>
+                        <a href="https://vk.com/dimaxmedusa" class="vkBtn fab fa-vk"></a>
+                        <a href="https://www.instagram.com/dimaxmedusa/"class="instBtn fab fa-instagram"></a>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6a87bccf11e9a337fd65b55faa3be3245563da883fa64f8a9d0686627c0976c7&amp;width=100%&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                     <div class="modal-footer">
-                        <h3>&copy;MedusaINK</h3>
+                        <h3>&copy;dimaXmedusa</h3>
                     </div>
                 </div>
             </div>
